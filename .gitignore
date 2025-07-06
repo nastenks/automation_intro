@@ -1,3 +1,6 @@
+artifacts/screenshots/
+artifacts/allure-results/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
