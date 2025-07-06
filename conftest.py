@@ -19,3 +19,8 @@ def browser(env_settings):
 def pytest_runtest_makereport(item, call):
     # Хук для скриншотов при падениях
     pass
+
+@pytest.fixture
+def login_page(driver):
+    from src.pages.login_page import LoginPage
+    return LoginPage(driver)
