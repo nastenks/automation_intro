@@ -1,7 +1,6 @@
 import pytest
 from config import Config
 from src.pages.login_modal import LoginModal
-from time import sleep
 
 @pytest.mark.login
 class TestLogin:
@@ -33,7 +32,7 @@ class TestLogin:
         # 6-8. Ввод учетных данных и отправка формы
         login_modal.login(Config.DEV_USER, Config.DEV_PASSWORD)
 
-        sleep(10)
+        
         
         # Здесь можно добавить проверки успешного входа
         # Например, проверить появление элемента, который виден только после входа
